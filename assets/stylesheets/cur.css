@@ -1,0 +1,50 @@
+::-webkit-scrollbar-thumb {
+    border-radius: 1.25rem;
+    background-clip: padding-box;
+    background-color: #bb86fc;
+    background-image: linear-gradient(45deg, rgba(34,34,34,0.5) 25%, transparent 0, transparent 50%, rgba(34,34,34,0.5) 0, rgba(34,34,34,0.5) 75%, transparent 0, transparent);
+}
+
+::selection {
+    background: #bb86fc;
+    color: #000;
+}
+
+.md-top:-webkit-any(:focus,:hover){
+    background-color:#bb86fc;
+    color:#000;
+    font-weight: bold !important;
+}
+
+.md-top:-moz-any(:focus,:hover){
+    background-color:#bb86fc;
+    color:#000;
+    font-weight: bold !important;
+}
+
+
+.md-top:is(:focus,:hover){
+    background-color:#bb86fc;
+    color:#000;
+    font-weight: bold !important;
+}
+
+.md-typeset figure {
+    font-size: 0.65rem !important;
+}
+
+/* .arithmatex {
+    font-size: 0.65rem !important;
+} */
+
+
+/* font size latex code */
+
+mjx-container.MathJax.CtxtMenu_Attached_0 {
+    font-size: 0.9rem !important;
+}
+
+html, body {
+    cursor: url(https://user-images.githubusercontent.com/86739367/178328016-06f8cad3-e33b-4260-a017-f44012227d14.png) 3 3, default;
+    position: static;
+}
