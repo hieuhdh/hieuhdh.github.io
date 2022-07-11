@@ -1,0 +1,54 @@
+---
+template: overrides/blog.html
+icon: material/table-edit
+title: Mã hóa ROT-X
+description: >
+  
+search:
+  exclude: true
+hide:
+  - feedback
+
+tags:
+  - Cryptography 
+  - Rot
+  - Substitution
+---
+
+# Mã hóa ROT-X
+
+<aside class="mdx-author" markdown>
+![@hieuhdh][@hieuhdh avatar]
+
+<span>__Deuteri__ · @hieuhdh</span>
+<span>
+:octicons-calendar-24: December 09, 2020 ·
+:octicons-clock-24: 5 min read ·
+
+</span>
+</aside>
+
+  [@hieuhdh avatar]: https://user-images.githubusercontent.com/86739367/178121501-82770982-19ab-43e7-86a4-3f31989401df.png
+
+---
+
+## __Something about ROT-X which I know__
+
+ROT-X ("rotate by X places", sometimes hyphenated ROT-X) is a simple letter substitution cipher that replaces a letter with the Xth letter after it in the alphabet. ROT13 is a special case of the Caesar cipher which was developed in ancient Rome.
+
+Because there are 26 letters (2×13) in the basic Latin alphabet, ROT13 is its own inverse; that is, to undo ROT13, the same algorithm is applied, so the same action can be used for encoding and decoding. The algorithm provides virtually no cryptographic security and is often cited as a canonical example of weak encryption. It means encrypt(encrypt(message)) = decrypt(message).
+
+__ROT13[^1]__ is used in online forums as a means of hiding spoilers, punchlines, puzzle solutions, and offensive materials from casual glance. ROT13 has inspired a variety of letter and word games online and is frequently mentioned in newsgroup conversations.
+
+In a general way: encrypt(message) with ROT-X = decrypt(message) with ROT-(26-X)
+
+Example:
+
+- Encrypt(message) with ROT1 = decrypt(message) with ROT25
+- Decrypt(message) with ROT1 = encrypt(message) with ROT25
+- Special case with <strong>ROT13</strong>: decrypt(message) = encrypt(encrypt(message))
+
+Expanding the alphabet (can add a special character such as "[, ], {, }, 1, 2, 3, 4, 5, 6, 7, 8, 9, ), ...", then according to the operating mechanism of the ROT-X cipher, we can easily decode or encode them.
+
+
+[^1]: Xem thêm tại [https://vi.wikipedia.org/wiki/ROT13](https://vi.wikipedia.org/wiki/ROT13)

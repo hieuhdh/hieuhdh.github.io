@@ -1,0 +1,237 @@
+# Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: Deuteri's Blog
+site_url: https://hieuhdh.github.io/
+site_author: Deuteri
+site_description: >-
+  Hello everyone, I’m Deuteri and all you guy can call me “Deu”. I’m a student
+
+# Repository
+repo_name: hieuhdh/hieuhdh.github.io
+repo_url: https://github.com/hieuhdh/hieuhdh.github.io.git
+
+# Copyright
+copyright: Copyright &copy; 2022 Deuteri
+
+# Configuration
+theme:
+  name: null
+  custom_dir: !ENV [THEME_DIR, "material"]
+  #custom_dir: overrides
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+    tag:
+      default: octicons/tag-16
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+      c++: fontawesome/brands/c++
+
+# Plugins
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        changelog/insiders.md: insiders/changelog.md
+        conventions.md: philosophy.md
+        reference/abbreviations.md: reference/tooltips.md
+        reference/meta-tags.md: reference/index.md
+        reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
+        sponsorship.md: insiders/index.md
+        upgrading.md: upgrade.md
+  - minify:
+      minify_html: true
+
+  - tags:
+      tags_file: tags/tags.md
+  - mkdocs-video
+
+# Customization
+extra:
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target=_blank>feedback form</a>.
+    provider: google
+    # property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-XXXXXXXXXX
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/ao.lncb/
+    - icon: fontawesome/brands/github
+      link: https://github.com/hieuhdh
+    - icon: fontawesome/brands/linkedIn
+      link: https://www.linkedin.com/in/hieuhdh/
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: hieuhdh
+      repo: hieuhdh.github.io
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+
+  - Blogs:
+    - blog/index.md
+    - Mathematics:
+      - Algebra:
+        - blog/2020/10/Mathematics/dong-du-thuc.md
+        - blog/2021/07/Mathematics/dai-so-boole.md
+    - CTF:
+      - Cryptography:
+        - blog/2020/10/CTF/picoCTF-2019.md
+        - blog/2021/05/CTF/picoCTF-2021.md
+    - Cryptography:
+      - Substitution Cipher:
+        - blog/2020/12/Cryptography/rot-x.md
+      - Symmetric encryption:
+        - Updating
+      - Asymmetric encryption:
+        - blog/2020/12/Cryptography/rsa.md
+    - Computer Programming:
+      - Object-oriented programming:
+        - blog/2021/03/OOP/01-oop-class.md
+        - blog/2021/03/OOP/02-oop-abstraction.md
+        - blog/2021/03/OOP/03-oop-encapsulation.md
+        - blog/2021/03/OOP/04-oop-inheritance.md
+        - blog/2021/03/OOP/05-oop-polymorphism.md
+
+  - Projects:
+    - project/index.md
+    - Năm 2021:
+      - Tháng 6:
+        - project/2021/06/food-inspection-program.md
+        - project/2021/06/robotic-vacuum-cleaner.md
+      - Tháng 7:
+        - project/2021/07/attendance-management-system.md
+      - Tháng 8:
+        - project/2021/08/brute-force-insider-attack.md
+      - Tháng 9:
+          - project/2021/09/quadratic-equations.md
+          - project/2021/09/multi-tasking-program.md
+      - Tháng 12:
+          - project/2021/12/go-chess.md
+    - Năm 2022:
+      - Tháng 6:
+        - project/2022/chinese-search-support.md
+  - Categories: tags/tags.md
+# extra_css:
+#   - stylesheets/extra.css

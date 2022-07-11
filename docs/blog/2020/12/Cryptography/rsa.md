@@ -1,0 +1,110 @@
+---
+template: overrides/blog.html
+icon: material/table-edit
+title: Mã hóa RSA
+description: >
+  
+search:
+  exclude: true
+hide:
+  - feedback
+
+tags:
+  - Cryptography 
+  - Symmetric
+---
+
+# Mã hóa RSA
+
+<aside class="mdx-author" markdown>
+![@hieuhdh][@hieuhdh avatar]
+
+<span>__Deuteri__ · @hieuhdh</span>
+<span>
+:octicons-calendar-24: December 17, 2020 ·
+:octicons-clock-24: 5 min read ·
+
+</span>
+</aside>
+
+  [@hieuhdh avatar]: https://user-images.githubusercontent.com/86739367/178121501-82770982-19ab-43e7-86a4-3f31989401df.png
+
+---
+
+## **Thông tin**
+
+Trong mật mã học, __RSA[^1]__ là một thuật toán mật mã hóa khóa công khai. Đây là thuật toán đầu tiên phù hợp với việc tạo ra chữ ký điện tử đồng thời với việc mã hóa. Nó đánh dấu một sự tiến bộ vượt bậc của lĩnh vực mật mã học trong việc sử dụng khóa công cộng. RSA đang được sử dụng phổ biến trong thương mại điện tử và được cho là đảm bảo an toàn với điều kiện độ dài khóa đủ lớn.
+
+RSA được xây dựng dựa trên lý thuyết số.
+
+## **Lý thuyết cơ bản toán học trong RSA**
+
+### **Mô tả sơ lược lý thuyết**
+
+Để học RSA, chúng ta cần phải biết một số lý thuyết về đồng dư thức, module, số nguyên tố, hàm Euler, định lý số dư Trung Hoa,...
+
+## **Quá trình tạo khóa và giải mã**
+### **Quá trình tạo khóa**
+
+Bước 1: Chọn 2 số nguyên tố lớn $p$ và $q$ sao cho $p \ne q$
+
+Bước 2: Tính $n=pq$
+
+Bước 3: Tính giá trị của hàm Euler:  $\phi(n) = \big(p - 1\big)\big(q-1\big)$
+
+Bước 4: Chọn một số tự nhiên $e$ sao cho  $\begin{cases}   1<e<\phi(n) \\   \big(e, \phi(n)\big) = 1 \end{cases}$
+
+Bước 5: Tính $d$ sao cho $de \equiv 1 \ \big(mod \ \phi(n) \big)$ 
+
+
+<div class="result" markdown>
+
+!!! note annotate "Lưu ý (1)"
+
+    Ở bước 3, Theo tiêu chuẩn __PKCS[^2]__ người ta dùng $\lambda = LCM(p-1,q-1)$ thay cho $\phi(n) = \big(p - 1\big)\big(q-1\big)$
+
+    Ở bước 5: Ta dễ dàng biến đổi như sau:
+
+    $\begin{align*} 
+        de  \equiv 1 \ \big(mod \ \phi(n) \big)  \Rightarrow & de - 1 \equiv \ \big(mod \ \phi(n) \big) 
+        \\
+        \Rightarrow &de  - 1 \vdots \phi(n) 
+        \\ 
+        \Rightarrow  &de  - 1 = k .\phi(n) 
+        \\
+        \Rightarrow &d = \frac{k.\phi(n) + 1}{e} =  \frac{k(p-1)(q-1) + 1}{e}
+    \end{align*}$
+
+1. :man_raising_hand: Khi sử dụng mã hóa RSA thì phải theo tiêu chuẩn nhất định.
+
+</div>
+
+  [admonitions]: admonitions.md
+  [inline blocks]: admonitions.md#inline-blocks
+
+###  **Quá trình mã hóa**
+
+Giả sử An là __người nhận__ thông điệp bí mật, chỉ An biết khóa bí mật $\big\{d, n\big\}$ và mọi người có thể biết khóa công khai $\big\{e, n\big\}$. Nếu người gửi gửi một thông điệp $m$ cần được giữ bí mật cho An, hãy chọn khóa công khai của An $\big\{e, n\big\}$ và sau đó tính $c = m^e \ mod \ n$ rồi gửi  đến cho An.
+
+### **Quá trình giải mã**
+
+Sau khi nhận được $c$, An sẽ tính toán theo khóa bí mật mà cô ấy có bằng cách tính $m = c^d \ mod \ n$.
+Kết quả là thông điệp sẽ được gửi bởi người gửi. 
+
+## __Tham khảo thêm__
+
+[:octicons-arrow-right-24: Xem thêm số nguyên tố][Số nguyên tố]
+
+[:octicons-arrow-right-24: Xem thêm hàm Euler][Hàm Euler]
+
+[:octicons-arrow-right-24: Xem thêm định lý số dư Trung Hoa][Định lý số dư Trung Hoa]
+
+[:octicons-arrow-right-24: Xem thêm đồng dư thức][Đồng dư thức]
+
+  [Số nguyên tố]: https://vi.wikipedia.org/wiki/S%E1%BB%91_nguy%C3%AAn_t%E1%BB%91
+  [Hàm Euler]: https://vi.wikipedia.org/wiki/H%C3%A0m_phi_Euler
+  [Định lý số dư Trung Hoa]: https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Bnh_l%C3%BD_s%E1%BB%91_d%C6%B0_Trung_Qu%E1%BB%91c
+  [Đồng dư thức]: https://hieuhdh.github.io/deuteri/Math-Dong-du-thuc/
+
+[^1]: Xem thêm tại [https://en.wikipedia.org/wiki/RSA_(cryptosystem)](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+[^2]: Xem tiêu chuẩn tại [PKCS#1 v2.1](https://aita.gov.vn/tieu-chuan-rsa-crytography-standard-version-2.2-pkcs-1-v2.2)
