@@ -67,7 +67,8 @@ $admonitions: (
     margin: px2em(20px, 12.8px) 0;
     padding: 0 px2rem(12px);
     color: var(--md-admonition-fg-color);
-    font-size: px2rem(12.8px);
+    // font-size: px2rem(12.8px);
+    font-size: 0.75rem !important;
     page-break-inside: avoid;
     background-color: var(--md-admonition-bg-color);
     border: 0 solid $clr-blue-a200;
@@ -180,4 +181,9 @@ $admonitions: (
       mask-size: contain;
     }
   }
+}
+
+
+.md-typeset :is(.admonition,details) {
+    font-size: .75rem !important;
 }

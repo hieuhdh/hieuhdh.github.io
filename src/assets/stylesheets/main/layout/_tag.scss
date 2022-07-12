@@ -53,8 +53,8 @@
     // Linked tag on focus/hover
     &:focus,
     &:hover {
-      color: #000;
-      background-color: #bb86fc;
+      color: #000 !important;
+      background-color: #bb86fc !important;
     }
   }
 

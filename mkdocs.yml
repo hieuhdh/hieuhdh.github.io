@@ -113,6 +113,14 @@ plugins:
 
 # Customization
 extra:
+  extra:
+    consent:
+      title: Cookie consent
+      description: >- 
+        We use cookies to recognize your repeated visits and preferences, as well
+        as to measure the effectiveness of our documentation and whether users
+        find what they're searching for. With your consent, you're helping us to
+        make our documentation better.
   analytics:
     feedback:
       title: Was this page helpful?
@@ -193,27 +201,30 @@ nav:
     - blog/index.md
     - Mathematics:
       - Algebra:
-        - blog/2020/10/Mathematics/dong-du-thuc.md
-        - blog/2021/07/Mathematics/dai-so-boole.md
+        - blog/mathematics/algebra/2020/10-15-dong-du-thuc.md
+        - blog/mathematics/algebra/2021/07-06-dai-so-boole.md
     - CTF:
       - Cryptography:
-        - blog/2020/10/CTF/picoCTF-2019.md
-        - blog/2021/05/CTF/picoCTF-2021.md
+        - blog/ctf/cryptography/2020/10-10-picoCTF-2019.md
+        - blog/ctf/cryptography/2021/05-10-picoCTF-2021.md
     - Cryptography:
-      - Substitution Cipher:
-        - blog/2020/12/Cryptography/rot-x.md
-      - Symmetric encryption:
-        - Updating
-      - Asymmetric encryption:
-        - blog/Cryptography/asymmetric-encryption/2020/17-12-rsa.md
-        - blog/Cryptography/asymmetric-encryption/2021/11-05-elgamal.md
+      - Cryptographic Algorithms:
+        - Substitution Cipher:
+          - blog/cryptography/cryptographic-algorithms/substitution-cipher/2020/12-09-rotx.md
+        - Sysmetric Cryptosystems:
+          - Updating
+        - Public-key Cryptosystems:
+          - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2020/12-17-rsa.md
+          - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2021/05-11-elgamal.md
+      - Some problems:
+        - blog/cryptography/problems/2021/06-01-yao's-millionaire-problem.md
     - Computer Programming:
       - Object-oriented programming:
-        - blog/2021/03/OOP/01-oop-class.md
-        - blog/2021/03/OOP/02-oop-abstraction.md
-        - blog/2021/03/OOP/03-oop-encapsulation.md
-        - blog/2021/03/OOP/04-oop-inheritance.md
-        - blog/2021/03/OOP/05-oop-polymorphism.md
+        - blog/cumputer-programming/oop/2021/03-01-01-oop-class.md
+        - blog/cumputer-programming/oop/2021/03-01-02-oop-encapsulation.md
+        - blog/cumputer-programming/oop/2021/03-01-03-oop-abstraction.md
+        - blog/cumputer-programming/oop/2021/03-01-04-oop-inheritance.md
+        - blog/cumputer-programming/oop/2021/03-01-05-oop-polymorphism.md
 
   - Projects:
     - project/index.md

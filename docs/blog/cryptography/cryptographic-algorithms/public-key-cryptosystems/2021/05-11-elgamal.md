@@ -36,4 +36,9 @@ tags:
 Trong mật mã học, __Elgamal[^1]__ là một thuật toán mật mã hóa khóa công khai. Được xây dựng dựa trên bài toán logarit rời rạc (DLP-Discrete Logarithm Problem) và trao đổi khóa bằng Diffie-Hellman.
  [^1]: Xem thêm tại [https://en.wikipedia.org/wiki/ElGamal_encryption](https://en.wikipedia.org/wiki/ElGamal_encryption)
 
-## **Lý thuyết cơ bản toán học trong RSA**
+## **Lý thuyết cơ bản toán học trong Elgamal**
+
+## **Quá trình tạo khóa và giải mã**
+
+### **Quá trình tạo khóa**
+
