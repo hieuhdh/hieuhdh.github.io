@@ -16,62 +16,67 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2020/10/CTF/picoCTF-2019/</loc>
+         <loc>https://hieuhdh.github.io/blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2020/12-17-rsa/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2020/10/Mathematics/dong-du-thuc/</loc>
+         <loc>https://hieuhdh.github.io/blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2021/05-11-elgamal/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2020/12/Cryptography/rot-x/</loc>
+         <loc>https://hieuhdh.github.io/blog/cryptography/cryptographic-algorithms/substitution-cipher/2020/12-09-rotx/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2021/03/OOP/01-oop-class/</loc>
+         <loc>https://hieuhdh.github.io/blog/cryptography/problems/2021/06-01-yao%27s-millionaire-problem/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2021/03/OOP/02-oop-abstraction/</loc>
+         <loc>https://hieuhdh.github.io/blog/ctf/cryptography/2020/10-10-picoCTF-2019/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2021/03/OOP/03-oop-encapsulation/</loc>
+         <loc>https://hieuhdh.github.io/blog/ctf/cryptography/2021/05-10-picoCTF-2021/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2021/03/OOP/04-oop-inheritance/</loc>
+         <loc>https://hieuhdh.github.io/blog/cumputer-programming/oop/2021/03-01-01-oop-class/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2021/03/OOP/05-oop-polymorphism/</loc>
+         <loc>https://hieuhdh.github.io/blog/cumputer-programming/oop/2021/03-01-02-oop-encapsulation/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2021/05/CTF/picoCTF-2021/</loc>
+         <loc>https://hieuhdh.github.io/blog/cumputer-programming/oop/2021/03-01-03-oop-abstraction/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/2021/07/Mathematics/dai-so-boole/</loc>
+         <loc>https://hieuhdh.github.io/blog/cumputer-programming/oop/2021/03-01-04-oop-inheritance/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/Cryptography/asymmetric-encryption/2020/17-12-rsa/</loc>
+         <loc>https://hieuhdh.github.io/blog/cumputer-programming/oop/2021/03-01-05-oop-polymorphism/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hieuhdh.github.io/blog/Cryptography/asymmetric-encryption/2021/11-05-elgamal/</loc>
+         <loc>https://hieuhdh.github.io/blog/mathematics/algebra/2020/10-15-dong-du-thuc/</loc>
+         <lastmod>2022-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hieuhdh.github.io/blog/mathematics/algebra/2021/07-06-dai-so-boole/</loc>
          <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
