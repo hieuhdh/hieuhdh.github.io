@@ -67,18 +67,20 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -115,6 +117,12 @@ plugins:
 extra:
   extra:
     consent:
+      actions:
+        - accept
+        - manage
+      cookies:
+        analytics: Google Analytics 
+        custom: Custom cookie
       title: Cookie consent
       description: >- 
         We use cookies to recognize your repeated visits and preferences, as well
@@ -147,6 +155,7 @@ extra:
     - icon: fontawesome/brands/linkedIn
       link: https://www.linkedin.com/in/hieuhdh/
 extra_javascript:
+  - javascripts/agree.js
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

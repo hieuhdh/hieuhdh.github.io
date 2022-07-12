@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: overrides/blog.html
 icon: material/alphabet-greek
 title: Đại số Boole
 description: >
