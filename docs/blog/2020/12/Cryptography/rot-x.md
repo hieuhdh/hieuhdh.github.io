@@ -51,4 +51,4 @@ Example:
 Expanding the alphabet (can add a special character such as "[, ], {, }, 1, 2, 3, 4, 5, 6, 7, 8, 9, ), ...", then according to the operating mechanism of the ROT-X cipher, we can easily decode or encode them.
 
 
-[^1]: Xem thêm tại [https://vi.wikipedia.org/wiki/ROT13](https://vi.wikipedia.org/wiki/ROT13)
+[^1]: See more [https://vi.wikipedia.org/wiki/ROT13](https://vi.wikipedia.org/wiki/ROT13)

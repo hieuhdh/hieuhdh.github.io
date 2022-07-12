@@ -205,7 +205,8 @@ nav:
       - Symmetric encryption:
         - Updating
       - Asymmetric encryption:
-        - blog/2020/12/Cryptography/rsa.md
+        - blog/Cryptography/asymmetric-encryption/2020/17-12-rsa.md
+        - blog/Cryptography/asymmetric-encryption/2021/11-05-elgamal.md
     - Computer Programming:
       - Object-oriented programming:
         - blog/2021/03/OOP/01-oop-class.md
