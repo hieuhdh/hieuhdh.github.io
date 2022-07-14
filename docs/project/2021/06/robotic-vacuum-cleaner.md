@@ -1,5 +1,5 @@
 ---
-template: overrides/blog.html
+template: overrides/project.html
 description: >
   Đây là đồ án môn học Data structure and Algorithms mà tôi đã học tại trường.
 search:
@@ -10,23 +10,13 @@ hide:
 
 # Robotic vacuum cleaner
 
-__Đây là đồ án mà tôi đã làm để kết thúc môn Cấu trúc dữ liệu và giải thuật.__
-
-<aside class="mdx-author" markdown>
-![@hieuhdh][@hieuhdh avatar]
-
-<span>__Deuteri__ · @hieuhdh</span>
 <span>
 :octicons-calendar-24: June 23, 2021 ·
-:octicons-clock-24: 5 min read ·
-[:octicons-tag-24: DSA][DSA]
-[:octicons-tag-24: AI][AI]
-</span>
-</aside>
+:octicons-clock-24: ~5 minutes
 
-  [@hieuhdh avatar]: https://user-images.githubusercontent.com/86739367/178121501-82770982-19ab-43e7-86a4-3f31989401df.png
-  [DSA]: ../../project/#DSA
-  [AI]: ../../project/#AI
+</span>
+
+__Đây là đồ án mà tôi đã làm để kết thúc môn Cấu trúc dữ liệu và giải thuật.__
 
 ---
 ### **Đề bài**

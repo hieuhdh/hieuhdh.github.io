@@ -220,6 +220,139 @@
     {% block scripts %}
       <script src="{{ 'assets/javascripts/bundle.6c7ad80a.min.js' | url }}"></script>
       <script src="{{ 'assets/javascripts/cursor-effects.js' | url }}"></script>
+      <!-- get ip -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            function taskService() {
+                this.postListApi = function () {
+                    return axios({
+                        url: "https://api.ipify.org?format=json",
+                        method: "GET",
+                    });
+                };
+            }
+            var TaskList = new taskService();
+
+            TaskList.postListApi()
+                .then(function (result) {
+
+                    function taskService02() {
+                        this.getListApiii = function () {
+                            return axios({
+                                url: "https://bedeu.herokuapp.com/iphomeposts/views/",
+                                method: "POST",
+                                data: {
+                                    "ip": result.data.ip,
+                                },
+                            });
+                        };
+                    }
+                    var TaskListList = new taskService02();
+
+                    TaskListList.getListApiii()
+                        .then(function (result) {
+                            if (result.data.sl > 1) {
+                                document.getElementById("view-user").innerHTML = result.data.sl + " times"
+                            } else {
+                                document.getElementById("view-user").innerHTML = result.data.sl + " time"
+                            }
+                        })
+                        .catch(function (erro) {
+                            console.log(erro)
+                        });
+                        
+                    function taskService01() {
+                        this.getListApii = function () {
+                            return axios({
+                                url: "https://bedeu.herokuapp.com/iphomeposts/views_total/",
+                                method: "GET",
+                            });
+                        };
+                    }
+                    var TaskListt = new taskService01();
+
+                    TaskListt.getListApii()
+                        .then(function (result) {
+                            document.getElementById("view-all").innerHTML = result.data
+                        })
+                        .catch(function (erro) {
+                            console.log(erro)
+                        });
+                })
+                .catch(function (erro) {});
+
+        </script>
+
+        <script>
+            function taskServicePost() {
+                this.postListApiTotal = function () {
+                    return axios({
+                        url: "https://api.ipify.org?format=json",
+                        method: "GET",
+                    });
+                };
+            }
+            var TaskList = new taskServicePost();
+            var arr = window.location.pathname.split('/');
+
+
+            TaskList.postListApiTotal()
+                .then(function (result) {
+
+                    function taskServicePost02() {
+                        this.getListApiUser = function () {
+                            return axios({
+                                url: "https://bedeu.herokuapp.com/ipposts/views/",
+                                method: "POST",
+                                data: {
+                                    "ip": result.data.ip,
+                                    "post": arr[arr.length - 2],
+                                },
+                            });
+                        };
+                    }
+                    var TaskListUser = new taskServicePost02();
+
+                    TaskListUser.getListApiUser()
+                        .then(function (result) {
+                            if (result.data.sl > 1) {
+                                document.getElementById("view-post-user").innerHTML = result.data.sl + " times";
+                            } else {
+                                document.getElementById("view-post-user").innerHTML = result.data.sl + " time";
+                            }
+                        })
+                        .catch(function (erro) {
+                            console.log(erro)
+                        });
+
+                        function taskServicePost01() {
+                        this.getListApiTotal = function () {
+                            return axios({
+                                url: "https://bedeu.herokuapp.com/ipposts/views_total/",
+                                method: "POST",
+                                data: {
+                                    "post": arr[arr.length - 2],
+                                },
+                            });
+                        };
+                    }
+                    var TaskListTotal = new taskServicePost01();
+
+                    TaskListTotal.getListApiTotal()
+                        .then(function (result) {
+                            if (result.data > 1) {
+                                document.getElementById("view-post-all").innerHTML = result.data + " times";
+                            } else {
+                                document.getElementById("view-post-all").innerHTML = result.data + " time";
+                            }
+                        })
+                        .catch(function (erro) {
+                            console.log(erro)
+                        });
+                })
+                .catch(function (erro) {});
+
+        </script>
       {% for path in config["extra_javascript"] %}
         <script src="{{ path | url }}"></script>
       {% endfor %}

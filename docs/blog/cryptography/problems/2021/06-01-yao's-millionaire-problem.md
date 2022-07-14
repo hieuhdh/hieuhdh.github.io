@@ -16,20 +16,14 @@ tags:
 
 # Yao's millionaire problem
 
-Năm 1982, Andrew Yao đã đề xuất bài toán triệu phú, trong đó thảo luận về cách hai triệu phú có thể xác định ai giàu hơn trong khi giữ bí mật tài sản thực tế của họ.
-
-<aside class="mdx-author" markdown>
-![@hieuhdh][@hieuhdh avatar]
-
-<span>__Deuteri__ · @hieuhdh</span>
 <span>
-:octicons-calendar-24: May 11, 2020 ·
-:octicons-clock-24: 5 min read ·
+:octicons-calendar-24: Mar 01, 2021 ·
+:octicons-clock-24: ~5 minutes
 
 </span>
-</aside>
 
-  [@hieuhdh avatar]: https://user-images.githubusercontent.com/86739367/178121501-82770982-19ab-43e7-86a4-3f31989401df.png
+Năm 1982, Andrew Yao đã đề xuất bài toán triệu phú, trong đó thảo luận về cách hai triệu phú có thể xác định ai giàu hơn trong khi giữ bí mật tài sản thực tế của họ.
+
 
 ---
 

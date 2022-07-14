@@ -112,23 +112,24 @@ plugins:
   - tags:
       tags_file: tags/tags.md
   - mkdocs-video
+  # - git-revision-date-localized:
+  #     enabled: !ENV [ENABLED_GIT_REVISION_DATE, True]
 
 # Customization
 extra:
-  extra:
-    consent:
-      actions:
-        - accept
-        - manage
-      cookies:
-        analytics: Google Analytics 
-        custom: Custom cookie
-      title: Cookie consent
-      description: >- 
-        We use cookies to recognize your repeated visits and preferences, as well
-        as to measure the effectiveness of our documentation and whether users
-        find what they're searching for. With your consent, you're helping us to
-        make our documentation better.
+  consent:
+    actions:
+      - accept
+      - manage
+    cookies:
+      analytics: Google Analytics 
+      custom: Custom cookie
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   analytics:
     feedback:
       title: Was this page helpful?
@@ -179,6 +180,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:materialx.emoji.to_svg
       emoji_index: !!python/name:materialx.emoji.twemoji
+      options:
+        custom_icons:
+          - overrides/.icons
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -227,6 +231,8 @@ nav:
           - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2021/05-11-elgamal.md
       - Some problems:
         - blog/cryptography/problems/2021/06-01-yao's-millionaire-problem.md
+    - Malware:
+      - None
     - Computer Programming:
       - Object-oriented programming:
         - blog/cumputer-programming/oop/2021/03-01-01-oop-class.md

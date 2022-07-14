@@ -1,5 +1,5 @@
 ---
-template: overrides/blog.html
+template: overrides/project.html
 title: Multi tasking program 
 description: >
 
@@ -14,23 +14,18 @@ tag:
   - Thread
 ---
 
-<aside class="mdx-author" markdown>
-![@hieuhdh][@hieuhdh avatar]
+# __Multi tasking program__
 
-<span>__Deuteri__ · @hieuhdh</span>
 <span>
 :octicons-calendar-24: September 13, 2021 ·
-:octicons-clock-24: 5 min read ·
-[:octicons-tag-24: Multi thread][Multi thread]
-[:octicons-tag-24: Python][Python]
-</span>
-</aside>
+:octicons-clock-24: ~5 minutes
 
-  [@hieuhdh avatar]: https://user-images.githubusercontent.com/86739367/178121501-82770982-19ab-43e7-86a4-3f31989401df.png
-  [Multi thread]: ../../project/#multi-thead
-  [Python]: ../../project/#Python
+__This is a project about Tkinter that I did to improve my coding skills__
+
+</span>
 
 ---
+
 ## About project
 
 With the sketchy knowledge that I learned from tkinter, I tried to create a software with many functions, to help users monitor system time, display RAM. More specifically, the login as well as the system registration with a rudimentary data encryption algorithm. Hope this project can help readers have a new look at python language.
