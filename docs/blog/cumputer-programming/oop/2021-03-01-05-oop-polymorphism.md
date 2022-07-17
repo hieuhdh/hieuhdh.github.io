@@ -1,7 +1,7 @@
 ---
 template: overrides/blog.html
 icon: material/table-edit
-title: Tính đa hình trong lập trình hướng đối tượng
+title: Polymorphism
 description: >
   Một vài điều về tính đa hình trong phương pháp lập trình hướng đối tượng được thể hiện ở ngôn ngữ lập trình C++
 search:
@@ -14,7 +14,7 @@ tags:
   - C++
 ---
 
-# Tính đa hình trong lập trình hướng đối tượng
+# __Tính đa hình trong lập trình hướng đối tượng__
 
 <span>
 :octicons-calendar-24: Mar 01, 2021 ·
@@ -24,13 +24,13 @@ tags:
 
 ---
 
-## Sơ lược về đa hình
+## __Sơ lược về đa hình__
 
-### Liên kết (blinding)
+### __Liên kết (blinding)__
 
 Liên kết là sự kết nối một lời gọi phương thức này tới thân phương thức khác.
 
-#### Liên kết tĩnh (Static blinding)
+#### __Liên kết tĩnh (Static blinding)__
 
 Liên kết tĩnh là loại liên kết do compiler quyết định (hay còn gọi là quyết định tại thời điểm biên dịch). 
 
@@ -51,7 +51,7 @@ int main(){
 
 Vì đối tượng giá trị b thuộc lớp đối tượng B đã được hình thành tại thời điểm biên dịch, do đó đây là 1 loại liên kết tĩnh.
 
-#### Liên kết động (Dynamic blinding)
+#### __Liên kết động (Dynamic blinding)__
 
 Liên kết động là loại liên kết chỉ xuất hiện khi thực thi (runtime). Ví dụ
 
@@ -438,11 +438,11 @@ public:
 };
 ```
 
-## Các vấn đề trong đa hình
+## __Các vấn đề trong đa hình__
 
-### Đa hình tại thời điểm biên dịch (Compiler time)
+### __Đa hình tại thời điểm biên dịch (Compiler time)__
 
-#### Nạp chồng hàm (Function overloading)
+#### __Nạp chồng hàm (Function overloading)__
 
 Câu hỏi đặt ra là ta đang có một hàm `cong` để thực hiện việc cộng hai số, làm thế nào để dùng cùng 1 hàm `cong` đó để ta có thể cộng hai số thực, hai số nguyên?
 
@@ -525,7 +525,8 @@ Lúc này, việc ghi đè phương thức là điều hoàn toàn cần thiết
 
 #### __Lỗi phân giải tĩnh__
 
-Lỗi phân giải tĩnh là lỗi xảy ra khi thực thi chương trình bằng việc ta ghi đè 1 phương thức nhưng gây ra hiện tượng đối tượng hiểu sai thông điệp mà phương thức truyền tải. Ta xem xét đoạn mã sau:
+__Lỗi phân giải tĩnh[^1]__ là lỗi xảy ra khi thực thi chương trình bằng việc ta ghi đè 1 phương thức nhưng gây ra hiện tượng đối tượng hiểu sai thông điệp mà phương thức truyền tải. Ta xem xét đoạn mã sau:
+ [^1]: Xem lỗi phân giải tĩnh tại https://stackoverflow.com/questions/41201266/how-does-resolution-of-class-member-identifiers-works-in-c
 
 ``` c++ linenums="1"
 using namespace std;

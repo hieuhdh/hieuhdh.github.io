@@ -14,7 +14,7 @@ tags:
   - Mathematics
 ---
 
-# Yao's millionaire problem
+# __Yao's millionaire problem__
 
 <span>
 :octicons-calendar-24: Mar 01, 2021 ·

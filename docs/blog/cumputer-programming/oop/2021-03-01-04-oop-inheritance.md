@@ -1,7 +1,7 @@
 ---
 template: overrides/blog.html
 icon: material/table-edit
-title: Tính kế thừa trong lập trình hướng đối tượng
+title: Inheritance
 description: >
   Một vài điều về tính kế thừa trong phương pháp lập trình hướng đối tượng được thể hiện ở ngôn ngữ lập trình C++
 search:
@@ -14,7 +14,7 @@ tags:
   - C++
 ---
 
-# Tính kế thừa trong lập trình hướng đối tượng
+# __Tính kế thừa trong lập trình hướng đối tượng__
 
 <span>
 :octicons-calendar-24: Mar 01, 2021 ·
@@ -38,7 +38,7 @@ Quan hệ is-a (Quan hệ đặc biệt hóa - tổng quát hóa): Hai lớp đ�
 
 Quan hệ loại is-a cũng là quan hệ mà về mặt logic chúng ta có thể dùng tính kế thừa để thể hiện.
 
-### Định nghĩa về kế thừa
+### __Định nghĩa về kế thừa__
 
 Kế thừa là cơ chế cho phép một lớp B có thể có được các thuộc tính cũng như là phương thức của lớp A như thể các thuộc tính và phương thức đó đã được định nghĩa ở lớp B.
 
@@ -46,13 +46,13 @@ Tính kể thừa giữa hai lớp chỉ được sử dụng khi 2 lớp có m�
 
 Trong ngôn ngữ lập trình C++, cung cấp cho ta nhiều kiểu kế thừa: Kế thừa ảo, kế thừa đơn, kế thừa tầng, đa kế thừa,...
 
-### Lợi ích của việc kế thừa
+### __Lợi ích của việc kế thừa__
 
 Kế thừa cho phép xây dựng lớp mới từ lớp đã có (giúp giảm bớt thời gian cũng như sự phức tạp của code).
 
 Kế thừa giúp chúng ta dễ dàng sửa chữa, nâng cấp hệ thống.
 
-## Các loại kế thừa cơ bản
+## __Các loại kế thừa cơ bản__
 
 Trong ngôn ngữ lập trình C++ cung cấp cho ta ba loại kế thừa cơ bản:
 
@@ -62,7 +62,7 @@ Trong ngôn ngữ lập trình C++ cung cấp cho ta ba loại kế thừa cơ b
 
 Tuy nhiên, riêng trường hợp thuộc tính (lẫn phương thức) đang ở trạng thái `private` ở lớp cơ sở, vẫn sẽ được kế thừa tại lớp dẫn xuất nhưng lớp dẫn xuất `không được quyền sử dụng`. Tức là khi kế thừa, lớp dẫn xuất sẽ được thừa hưởng tất cả các thuộc tính và phương thức của lớp cơ sở, còn việc lớp dẫn xuất có truy cập được hay không là phụ thuộc vào trạng thái thuộc tính (cũng như phương thức) mà lớp cơ sở hiện có.
 
-## Cú pháp khai báo trong kế thừa
+## __Cú pháp khai báo trong kế thừa__
 
 Để thể hiện mối quan hệ giữa các đối tượng trong thế giới thực, ta cần phải có một sơ đồ thể hiện mối qua hệ đó. Ví dụ: giữa đối tượng cha và đối tượng con có quan hệ kế thừa,...
 
@@ -99,7 +99,7 @@ Về mặt logic, lớp C sẽ kế thừa tất cả thuộc tính và phương
 
 Và ví dụ trên cũng thể hiện cho 1 loại kế thừa tầng phổ biến.
 
-## Định nghĩa lại các thuộc tính, phương thức trong kế thừa
+## __Định nghĩa lại các thuộc tính, phương thức trong kế thừa__
 
 Xét đoạn chương trình sau
 
@@ -126,9 +126,9 @@ Lúc này chúng ta đã cập nhật giá trị của biến `a` từ giá tr�
 
 Tương tự, ta hoàn toàn có thể định nghĩa lại các phương thức cho phù hợp với những gì mà lớp dẫn xuất muốn. Và đây cũng là một lưu ý quan trọng trong việc ràng buộc dữ liệu từ lớp cơ sở xuống lớp dẫn xuất
 
-## Các vấn đề từ việc khai báo đối tượng trong kế thừa
+## __Các vấn đề từ việc khai báo đối tượng trong kế thừa__
 
-### Contructor
+### __Contructor__
 
 Trong nguyên tắc kế thừa, nếu ta muốn khởi tạo 1 đối tượng giá trị (hoặc đối tượng con trỏ) ở lớp dẫn xuất thì hàm khởi tạo (contructor) sẽ được thực thi tại lớp cơ sở trước, sau đó mới đến lớp dẫn xuất.
 
@@ -173,7 +173,7 @@ Muốn khởi tạo 1 đối tượng giá trị `c` ở lớp đối tượng `
 
 Tóm lại đầu ra của đoạn chương trình trên là dòng chữ `ABC`.
 
-### Destructor
+### __Destructor__
 
 Tương tự contructor nhưng destructor nó sẽ được thực thi theo thứ tự ngược lại (tức destructor của lớp dẫn xuất sẽ được thực thi trước, sau đó mới đến lượt lớp cơ sở).
 
@@ -216,7 +216,7 @@ int main(){
 
 Trong phương thức destructor ta còn 1 vấn đề nhỏ là `virtual destructor` và tôi sẽ đề cập sau trong phần lý thuyết về đa hình.
 
-### Kế thừa ảo
+### __Kế thừa ảo__
 
 Với tình huống giả định có nhiều hơn 1 lớp cơ sở ứng với 1 lớp dẫn xuất, thì lúc này sẽ xảy ra trường hợp lỗi mơ hồ tức là lúc này lớp dẫn xuất đang không hiểu nó muốn được kế thứa từ lớp nào. Ta dùng kế thừa ảo để giải quyết trường hợp này bằng việc thêm từ khóa `virtual` trước loại kế thừa. Xem xét đoạn code bên dưới:
 
@@ -274,7 +274,7 @@ Và đây cũng là một `Diamond problem` mà tôi đã đề cập phía dư�
 
 Trong một số trường hợp, ta phải dùng kế thừa ảo để giải quyết vấn đề và `Diamond problem` là một trường hợp điển hình cho việc làm này.
 
-### Upcasting
+### __Upcasting__
 
 Xem xét và dự đoán đầu ra của đoạn chương trình bên dưới:
 
@@ -344,7 +344,7 @@ Hiển nhiên, với đoạn chương trình trên đầu ra sẽ là chữ cái
 
 Tóm lại, Upcasting dùng để tạo mối quan hệ giữa lớp cơ sở và lớp dẫn xuất.
 
-### Downcasting
+### __Downcasting__
 
 **Downcasting** là một quá trình ngược lại đối với **Upcasting**, nếu quá trình upcast là quá trình khai báo một con trỏ đối tượng thuộc lớp cơ sở để thực hiện việc liên kết động với đối tượng ở lớp dẫn xuất thì downcast là việc tạo một liên kết động giữa con trỏ thuộc lớp dẫn xuất sang một đối tượng thuộc lớp cơ sở. Nghe có vẻ vô lý đúng không? Chúng ta cùng xem ví dụ bên dưới:
 
@@ -377,79 +377,85 @@ int main(){
 
 </div>
 
-Hiển nhiên, đoạn chương trình trên sẽ in ra chữ `B`. Câu hỏi đặt ra ở đây là làm thế nào để đoạn chương trình trên có thể in ra chữ `A` mà không làm xuất hiện lỗi phân giải tĩnh?
+Hiển nhiên, đoạn chương trình trên sẽ in ra chữ `B`. 
 
-__Lỗi phân giải tĩnh__: Tôi sẽ đề cập sâu hơn về lỗi này ở phần lý thuyết đa hình, tại thời điểm này chúng ta hiểu đơn giản là không xóa đi chữ `virtual` ở hàm action() trong lớp đối tượng A.
+=== "__Câu hỏi__"
+    !!! question "__Câu hỏi__"
+        Làm thế nào để đoạn chương trình trên có thể in ra chữ `A` mà không làm xuất hiện lỗi phân giải tĩnh?
 
-Có rất nhiều cách để chương trình xuất ra chữ `A`. Ví dụ ta có thể thay đổi đối tượng con trỏ `b` thuộc lớp B thành 1 đối tượng `a` thuộc lớp `A`, ta có đoạn mã cho cách giải quyết này như sau:
+    __Lỗi phân giải tĩnh[^1]__: Tôi sẽ đề cập sâu hơn về lỗi này ở phần lý thuyết đa hình, tại thời điểm này chúng ta hiểu đơn giản là không xóa đi chữ `virtual` ở hàm action() trong lớp đối tượng A.
+    [^1]: Xem lỗi phân giải tĩnh tại https://stackoverflow.com/questions/41201266/how-does-resolution-of-class-member-identifiers-works-in-c
+=== "__Hướng giải quyết__"
+    !!! success "__Trả lời câu hỏi__"
+        Có rất nhiều cách để chương trình xuất ra chữ `A`. Ví dụ ta có thể thay đổi đối tượng con trỏ `b` thuộc lớp B thành 1 đối tượng `a` thuộc lớp `A`, ta có đoạn mã cho cách giải quyết này như sau:
 
-<div class="result" markdown>
+        <div class="result" markdown>
 
-``` c++ linenums="1"
-using namespace std;
+        ``` c++ linenums="1" hl_lines="20 21"
+        using namespace std;
 
-class A{
-private:
-    int a = 1;
-public:
-    virtual void action(){
-        cout << "A";
-    }
-};
+        class A{
+        private:
+            int a = 1;
+        public:
+            virtual void action(){
+                cout << "A";
+            }
+        };
 
-class B: public A{
-public:
-    void action(){
-        cout << "B";
-    }
-};
+        class B: public A{
+        public:
+            void action(){
+                cout << "B";
+            }
+        };
 
-int main(){
-    A a;
-    a.action();
-}
-```
+        int main(){
+            A a;
+            a.action();
+        }
+        ```
 
-</div>
+        </div>
 
-Hoặc ta có thể dùng đối tượng con trỏ cho lớp đối tượng `A` như sau:
+        Hoặc ta có thể dùng đối tượng con trỏ cho lớp đối tượng `A` như sau:
 
-<div class="result" markdown>
+        <div class="result" markdown>
 
-``` c++ linenums="1"
-using namespace std;
+        ``` c++ linenums="1" hl_lines="20 21"
+        using namespace std;
 
-class A{
-private:
-    int a = 1;
-public:
-    virtual void action(){
-        cout << "A";
-    }
-};
+        class A{
+        private:
+            int a = 1;
+        public:
+            virtual void action(){
+                cout << "A";
+            }
+        };
 
-class B: public A{
-public:
-    void action(){
-        cout << "B";
-    }
-};
+        class B: public A{
+        public:
+            void action(){
+                cout << "B";
+            }
+        };
 
-int main(){
-    A *a = new A;
-    a->action();
-}
-```
+        int main(){
+            A *a = new A;
+            a->action();
+        }
+        ```
 
-</div>
+        </div>
 
-Và còn nhiều cách nữa...
+        Và còn nhiều cách nữa...
 
-:   !!! question
+!!! question "Câu hỏi"
 
-        Làm thế nào để đoạn chương trình trên có thể in ra chữ `A` với __trường hợp dùng đối tượng thuộc lớp đối tượng__ mà không làm xuất hiện lỗi phân giải tĩnh?
+    Làm thế nào để đoạn chương trình trên có thể in ra chữ `A` với __trường hợp dùng đối tượng thuộc lớp đối tượng__ mà không làm xuất hiện lỗi phân giải tĩnh?
 
-Thì để giải quyết trường hợp này, ta có thể dùng cơ chế `Downcasting`, và đoạn mã chương trình sẽ như sau:
+Thì để giải quyết trường hợp này, ta có thể dùng cơ chế `__Downcasting__`, và đoạn mã chương trình sẽ như sau:
 
 ``` c++ linenums="1"
 using namespace std;
@@ -480,25 +486,27 @@ int main(){
 
 Lúc này, ta đã downcast bằng cú pháp `b = (B *)&a` và đã giải quyết được vấn đề.
 
-:   !!! question
+=== "__Câu hỏi__"
+    !!! question "Câu hỏi"
 
         Vậy tại sao ta lại phải dùng downcasting phức tạp như vậy?
+=== "__Giải quyết câu hỏi__"
+    !!! success "Trả lời"
+        Câu trả lời cho trường hợp này là tùy theo tình huống cũng như ngữ cảnh mà mình có thể áp dụng đúng cơ chế kế thừa thích hợp:
 
-Câu trả lời cho trường hợp này là tùy theo tình huống cũng như ngữ cảnh mà mình có thể áp dụng đúng cơ chế kế thừa thích hợp:
+        * Ví dụ trong ngữ cảnh ta có lớp đối tượng `SinhVien` kế thừa lớp đối tượng `Nguoi` và ta đã định nghĩa một toán tử nào đó cho lớp `Nguoi` và mong muốn đối tượng thuộc lớp đối tượng `SinhVien` sử dụng được thì ta có thể dùng cơ chế Downcasting, hoặc Downcasting trong những vấn đề về nạp chồng hàm (tôi sẽ nói kĩ ở phần lý thuyết đa hình) giữa lớp cơ sở và lớp dẫn xuất.
 
-* Ví dụ trong ngữ cảnh ta có lớp đối tượng `SinhVien` kế thừa lớp đối tượng `Nguoi` và ta đã định nghĩa một toán tử nào đó cho lớp `Nguoi` và mong muốn đối tượng thuộc lớp đối tượng `SinhVien` sử dụng được thì ta có thể dùng cơ chế Downcasting, hoặc Downcasting trong những vấn đề về nạp chồng hàm (tôi sẽ nói kĩ ở phần lý thuyết đa hình) giữa lớp cơ sở và lớp dẫn xuất.
+        * Về phần Upcasting thì khá dễ và được sử dụng rộng rãi.
 
-* Về phần Upcasting thì khá dễ và được sử dụng rộng rãi.
-
-## Đa kế thừa
+## __Đa kế thừa__
 
 Đa kế thừa là việc cho phép 1 lớp dẫn xuất có thể kế thừa từ nhiều lớp cơ sở (khác hoàn toàn với việc 1 lớp cơ sở có thể cho nhiều lớp kế thừa). Chính vì điều này mà khiến cho việc đa kế thừa sẽ sinh ra nhiều vấn đề rắc rối khác.
 
-## Các vấn đề lớn trong đa kế thừa
+## __Các vấn đề lớn trong đa kế thừa__
 
-### Diamond problem
+### __Diamond problem__
 
-Diamond problem[^1] được hiểu nôm na là trạng thái xung đột giữa một lớp dẫn xuất D được kế thừa từ 2 lớp cơ sở B và C, và lớp B và C lại cùng là lớp dẫn xuất của lớp cơ sở A.
+Diamond problem[^2] được hiểu nôm na là trạng thái xung đột giữa một lớp dẫn xuất D được kế thừa từ 2 lớp cơ sở B và C, và lớp B và C lại cùng là lớp dẫn xuất của lớp cơ sở A.
 
 Hãy xem xét ví dụ bên dưới:
 
@@ -590,4 +598,4 @@ Vấn đề ở đây là chương trình đang gặp lỗi phân giải tĩnh m
 
   [Inheritance]: https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
 
-[^1]: Xem thêm tại [https://github.com/hieuhdh/OOP/tree/master/Theory/Problems/Polymorphism/runTime/DiamondProblem](https://github.com/hieuhdh/OOP/tree/master/Theory/Problems/Polymorphism/runTime/DiamondProblem)
+[^2]: Xem thêm tại [https://github.com/hieuhdh/OOP/tree/master/Theory/Problems/Polymorphism/runTime/DiamondProblem](https://github.com/hieuhdh/OOP/tree/master/Theory/Problems/Polymorphism/runTime/DiamondProblem)
