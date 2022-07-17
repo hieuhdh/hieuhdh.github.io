@@ -1,1 +1,1 @@
-Thanks squidfunk and everyone can see theme at https://github.com/squidfunk/mkdocs-material
+Thanks __squidfunk__ and everyone can see theme at https://github.com/squidfunk/mkdocs-material

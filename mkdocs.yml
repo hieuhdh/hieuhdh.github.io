@@ -82,8 +82,8 @@ theme:
         icon: material/toggle-switch
         name: Switch to dark mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Fira Sans
+    code: Fira Code
   favicon: assets/favicon.png
   icon:
     logo: logo
@@ -212,34 +212,38 @@ nav:
 
   - Blogs:
     - blog/index.md
-    - Mathematics:
-      - Algebra:
-        - blog/mathematics/algebra/2020/10-15-dong-du-thuc.md
-        - blog/mathematics/algebra/2021/07-06-dai-so-boole.md
+    - Abstract Mathematics:
+      - Abstract Algebra:
+        - blog/abstract-mathematics/abstract-algebra/2020-10-15-modules.md
+        - blog/abstract-mathematics/abstract-algebra/2021-07-06-boolean.md
     - CTF:
       - Cryptography:
-        - blog/ctf/cryptography/2020/10-10-picoCTF-2019.md
-        - blog/ctf/cryptography/2021/05-10-picoCTF-2021.md
+        - blog/ctf/cryptography/2020-10-10-picoCTF-2019.md
+        - blog/ctf/cryptography/2021-05-10-picoCTF-2021.md
     - Cryptography:
       - Cryptographic Algorithms:
         - Substitution Cipher:
-          - blog/cryptography/cryptographic-algorithms/substitution-cipher/2020/12-09-rotx.md
+          - Monoalphabetic Cipher:
+            - blog/cryptography/cryptographic-algorithms/substitution-cipher/monoalphabetic-cipher/index.md
+            - blog/cryptography/cryptographic-algorithms/substitution-cipher/monoalphabetic-cipher/2020-12-09-rotx.md
+          - Polyalphabetic Cipher:
+            - blog/cryptography/cryptographic-algorithms/substitution-cipher/polyalphabetic-cipher/index.md
         - Sysmetric Cryptosystems:
           - Updating
         - Public-key Cryptosystems:
-          - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2020/12-17-rsa.md
-          - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2021/05-11-elgamal.md
+          - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2020-12-17-rsa.md
+          - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2021-05-11-elgamal.md
       - Some problems:
-        - blog/cryptography/problems/2021/06-01-yao's-millionaire-problem.md
-    - Malware:
-      - None
+        - blog/cryptography/problems/2021-06-01-yao's-millionaire-problem.md
     - Computer Programming:
       - Object-oriented programming:
-        - blog/cumputer-programming/oop/2021/03-01-01-oop-class.md
-        - blog/cumputer-programming/oop/2021/03-01-02-oop-encapsulation.md
-        - blog/cumputer-programming/oop/2021/03-01-03-oop-abstraction.md
-        - blog/cumputer-programming/oop/2021/03-01-04-oop-inheritance.md
-        - blog/cumputer-programming/oop/2021/03-01-05-oop-polymorphism.md
+        - blog/cumputer-programming/oop/2021-03-01-01-oop-class.md
+        - blog/cumputer-programming/oop/2021-03-01-02-oop-encapsulation.md
+        - blog/cumputer-programming/oop/2021-03-01-03-oop-abstraction.md
+        - blog/cumputer-programming/oop/2021-03-01-04-oop-inheritance.md
+        - blog/cumputer-programming/oop/2021-03-01-05-oop-polymorphism.md
+    - Malware:
+      - None
 
   - Projects:
     - project/index.md

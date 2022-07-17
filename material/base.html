@@ -71,6 +71,10 @@
       {% include "partials/integrations/analytics.html" %}
     {% endblock %}
     {% block extrahead %}{% endblock %}
+          <!-- live 2d -->
+          <link href="https://r18-nmsl.cn/pio/pio.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+    <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> -->
   </head>
   {% set direction = config.theme.direction or lang.t('direction') %}
   {% if config.theme.palette %}
