@@ -2,7 +2,11 @@
     border-radius: 1.25rem;
     background-clip: padding-box;
     background-color: #bb86fc;
-    background-image: linear-gradient(45deg, rgba(34,34,34,0.5) 25%, transparent 0, transparent 50%, rgba(34,34,34,0.5) 0, rgba(34,34,34,0.5) 75%, transparent 0, transparent);
+    background-image: linear-gradient(45deg, rgba(24, 24, 38,0.5) 25%, transparent 0, transparent 50%, rgba(24, 24, 38,0.5) 0, rgba(24, 24, 38,0.5) 75%, transparent 0, transparent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bb86fc !important;
 }
 
 ::selection {
@@ -97,4 +101,160 @@ h1{
 .bi.bi-eyeglasses {
     margin-bottom: -4px !important;
     margin-right: 4px !important;
+}
+
+/* // 404 click  */
+
+.notification-page{
+    width: 100%;
+    text-align: center;
+    color: #aaa;
+}
+
+.notification-page h1{
+    /* // margin: 0.67em !important; */
+    /* padding: 3rem !important; */
+    font-size: 200px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text !important;
+}
+
+.btn-404-click {
+    /* Clean style */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    color: #bb86fc;
+    cursor: pointer;
+    /* Clean style */
+    position: relative;
+    padding: 6px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.0rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .15s ease;
+}
+
+.btn-404-click::before,
+.btn-404-click::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+}
+
+.btn-404-click::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+.btn-404-click::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+
+.btn-404-click:active,
+.btn-404-click:focus {
+    outline: none;
+}
+
+.btn-404-click:active::before,
+.btn-404-click:active::after {
+    right: 3px;
+    left: 3px;
+}
+
+.btn-404-click:active::before {
+    top: 3px;
+}
+
+.btn-404-click:active::after {
+    bottom: 3px;
+}
+
+.btn-404-click__inner {
+    position: relative;
+    display: block;
+    padding: 6px 25px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px#bb86fc;
+}
+
+.btn-404-click__inner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #181826;
+}
+
+.btn-404-click__inner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #181826;
+    transition: all .2s ease;
+}
+
+.btn-404-click__slide {
+    display: block;
+    position: absolute;
+    top: 0; bottom: -1px; left: -8px;
+    width: 0; 
+    background: #bb86fc;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+
+.btn-404-click__content {
+    position: relative;
+}
+
+.btn-404-click:hover {
+    color:#000 !important;
+}
+
+.btn-404-click:hover .btn-404-click__slide {
+    width: calc(100% + 15px);
+}
+
+.btn-404-click:hover .btn-404-click__inner::after {
+    background-color: #000;
+    color: #181826
+}
+
+/* // text - 404 */
+.text-404 {
+    margin: 0px;
+}
+
+.text-404-1 {
+    margin: 0px;
+    margin-top: 1rem;
+}
+
+/* // link for 404 */
+.link-for-404{
+    text-decoration: none; 
+    color:#bb86fc !important;
+}
+
+.link-for-404:hover{
+    color: #d37bb8 !important;
 }
