@@ -379,13 +379,13 @@ int main(){
 
 Hiển nhiên, đoạn chương trình trên sẽ in ra chữ `B`. 
 
-=== "__Câu hỏi__"
+=== "__:question: Câu hỏi__"
     !!! question "__Câu hỏi__"
         Làm thế nào để đoạn chương trình trên có thể in ra chữ `A` mà không làm xuất hiện lỗi phân giải tĩnh?
 
     __Lỗi phân giải tĩnh[^1]__: Tôi sẽ đề cập sâu hơn về lỗi này ở phần lý thuyết đa hình, tại thời điểm này chúng ta hiểu đơn giản là không xóa đi chữ `virtual` ở hàm action() trong lớp đối tượng A.
     [^1]: Xem lỗi phân giải tĩnh tại https://stackoverflow.com/questions/41201266/how-does-resolution-of-class-member-identifiers-works-in-c
-=== "__Hướng giải quyết__"
+=== "__:material-reply:{ .reply-nor } Hướng giải quyết__"
     !!! success "__Trả lời câu hỏi__"
         Có rất nhiều cách để chương trình xuất ra chữ `A`. Ví dụ ta có thể thay đổi đối tượng con trỏ `b` thuộc lớp B thành 1 đối tượng `a` thuộc lớp `A`, ta có đoạn mã cho cách giải quyết này như sau:
 
@@ -451,7 +451,7 @@ Hiển nhiên, đoạn chương trình trên sẽ in ra chữ `B`.
 
         Và còn nhiều cách nữa...
 
-!!! question "Câu hỏi"
+!!! question ":question: Câu hỏi"
 
     Làm thế nào để đoạn chương trình trên có thể in ra chữ `A` với __trường hợp dùng đối tượng thuộc lớp đối tượng__ mà không làm xuất hiện lỗi phân giải tĩnh?
 
@@ -486,11 +486,11 @@ int main(){
 
 Lúc này, ta đã downcast bằng cú pháp `b = (B *)&a` và đã giải quyết được vấn đề.
 
-=== "__Câu hỏi__"
+=== "__:question: Câu hỏi__"
     !!! question "Câu hỏi"
 
         Vậy tại sao ta lại phải dùng downcasting phức tạp như vậy?
-=== "__Giải quyết câu hỏi__"
+=== "__:material-reply:{ .reply-nor } Giải quyết câu hỏi__"
     !!! success "Trả lời"
         Câu trả lời cho trường hợp này là tùy theo tình huống cũng như ngữ cảnh mà mình có thể áp dụng đúng cơ chế kế thừa thích hợp:
 
