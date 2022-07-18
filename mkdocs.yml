@@ -231,6 +231,7 @@ nav:
         - Sysmetric Cryptosystems:
           - Updating
         - Public-key Cryptosystems:
+          - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/index.md
           - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2020-12-17-rsa.md
           - blog/cryptography/cryptographic-algorithms/public-key-cryptosystems/2021-05-11-elgamal.md
       - Some problems:
@@ -264,5 +265,5 @@ nav:
       - Tháng 6:
         - project/2022/chinese-search-support.md
   - Categories: tags/tags.md
-# extra_css:
-#   - stylesheets/extra.css
+extra_css:
+  - stylesheets/extra.css
