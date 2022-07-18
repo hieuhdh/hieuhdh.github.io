@@ -45,14 +45,14 @@ Với tập $s = s_ns_{n-1}...s_0 \in \big\{0,1\big\}^n$.
 
 Giữa tập $S_s^0$ và tập $S_s^1$ có nhiều nhất $n$ phần tử.
 
-=== "Giải quyết vấn đề"
+=== ":hand_splayed_tone4: Giải quyết vấn đề"
     !!! tip "Giải quyết"
         Từ đây, vấn đề đưa ra được giải quyết như sau:
 
         - Nếu ta mã hóa a thành dạng 1-encoding $S_a^1$ và mã hóa b thành dạng 0-encoding $S_b^0$ chúng ta sẽ thấy rằng $a > b$ khi và chỉ khi $S_a^1$ và $S_b^0$ có phần tử chung tức $S_a^1 \cap S_b^0 \ne \emptyset$
 
-=== "Ví dụ"
-    ???+ info "Ví dụ"
+=== ":material-hexagon-multiple-outline:{ .example-nor } Ví dụ"
+    ???+ example "Ví dụ"
         Alice có $a = 18$, Bob có $b = 12$. Giả sử ta không biết giá trị của 2 số mà Alice và Bob hiện có, ta thực hiện các phép tính sau: 
 
         - $S_a^1 = S_{18}^1 = \big\{1, 1001\big\}$
