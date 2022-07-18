@@ -294,19 +294,15 @@ Và chúng ta đã áp dụng được tính đa hình lẫn kế thừa trong �
 
 Hơn nữa với đoạn mã trên, không những dễ đọc mà ta còn dễ dàng sửa đổi cũng như thêm vào những định nghĩa mới.
 
-!!! question "Vấn đề"
+!!! example "Vấn đề"
 
-    === "Câu hỏi"
+    === ":question: Câu hỏi"
 
-        ``` markdown
         Tại sao 2 phương thức `nhap` và `xuat` trong lớp đối tượng `Nguoi` là phương thức ảo?
-        ```
 
-    === "Trả lời"
+    === ":material-reply:{ .reply-nor } Trả lời"
 
-        ``` markdown
         Việc biến 2 phương thức nêu trên thành phương thức ảo nhằm sửa lỗi phân giải tĩnh (tôi đã đề cập ở phân sau).
-        ```
 
 !!! note "Nhận xét"
     Tuy là phương thức `nhap` cũng như phương thức `xuat` ở lớp đối tượng `SinhVien` không có từ khóa `virtual` nhưng bù lại phương thức tương ứng của chúng ở lớp `Nguoi` (tức lớp cơ sở) lại là phương thức ảo, do đó cả hai phương thức `nhap` và`xuat` ở lớp đối tượng `SinhVien` cũng đều là phương thức ảo.
