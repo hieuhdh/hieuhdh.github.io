@@ -47,7 +47,7 @@ Giữa tập $S_s^0$ và tập $S_s^1$ có nhiều nhất $n$ phần tử.
 
 === ":hand_splayed_tone4: Giải quyết vấn đề"
     !!! tip "Giải quyết"
-        Từ đây, vấn đề đưa ra được giải quyết như sau:
+        Dựa vào __0-encoding and 1-encoding__, vấn đề đưa ra được giải quyết như sau:
 
         - Nếu ta mã hóa a thành dạng 1-encoding $S_a^1$ và mã hóa b thành dạng 0-encoding $S_b^0$ chúng ta sẽ thấy rằng $a > b$ khi và chỉ khi $S_a^1$ và $S_b^0$ có phần tử chung tức $S_a^1 \cap S_b^0 \ne \emptyset$
 
