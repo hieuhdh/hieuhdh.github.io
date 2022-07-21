@@ -64,4 +64,4 @@ Giữa tập $S_s^0$ và tập $S_s^1$ có nhiều nhất $n$ phần tử.
 
 Phép đồng cấu (homomorphism) là một thuộc tính quan trọng và được cung cấp bởi các hệ thống mật mã, trong đó, phép toán trên bản rõ được ánh xạ thành một phép toán khác trên bản mã. 
 
-- [x] :octicons-arrow-right-24: Tài liệu đang cập nhật
+:octicons-heart-fill-24:{ .heart } Tài liệu đang cập nhật
