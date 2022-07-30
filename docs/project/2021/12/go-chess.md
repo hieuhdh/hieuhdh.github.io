@@ -11,6 +11,10 @@ tags:
   - ANN 
   - AI
   - ML
+  - Client-server
+  - Multi player
+  - C#
+  - Windows form
 ---
 
 # __Game cờ vây__
@@ -21,7 +25,7 @@ tags:
 
 </span>
 
-__Đây là đồ án môn lập trình mạng căn bản mà tôi đã học tại trường__
+Đây là đồ án môn __lập trình mạng căn bản__ mà tôi đã học tại trường.
 
 
 ---
