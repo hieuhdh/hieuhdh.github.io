@@ -294,3 +294,9 @@ h1{
     background-position: 200% center;
   }
 }
+
+/* .highlight code */
+
+.highlight .hll{
+    background-color: #bb86fc !important;
+}
