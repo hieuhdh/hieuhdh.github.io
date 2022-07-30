@@ -1,14 +1,20 @@
 ---
 template: overrides/project.html
+title: Robotic vacuum cleaner
 description: >
   Đây là đồ án môn học Data structure and Algorithms mà tôi đã học tại trường.
 search:
   exclude: true
 hide:
   - feedback
+tags:
+  - C++
+  - DSA
+  - BFS algorithms
+  - Heurictis algorithms
 ---
 
-# Robotic vacuum cleaner
+# __Robotic vacuum cleaner__
 
 <span>
 :octicons-calendar-24: June 23, 2021 ·
@@ -16,7 +22,7 @@ hide:
 
 </span>
 
-__Đây là đồ án mà tôi đã làm để kết thúc môn Cấu trúc dữ liệu và giải thuật.__
+Đây là đồ án mà tôi đã làm để kết thúc môn __Cấu trúc dữ liệu và giải thuật__ mà tôi đã học tại trường.
 
 ---
 ### **Đề bài**
