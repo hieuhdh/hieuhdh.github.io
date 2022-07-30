@@ -15,3 +15,6 @@ hide:
 </span>
 
 ---
+
+[:octicons-arrow-right-24: Source code][Source]
+  [Source]: https://github.com/hieuhdh/Quadratic-Equations
