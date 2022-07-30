@@ -76,7 +76,7 @@
   // Hack: promote to own layer to reduce jitter
   backface-visibility: hidden;
   transition: opacity 250ms;
-
+  padding-top: 10px !important;
   // Repository information on hover
   &:hover {
     opacity: 0.7;
