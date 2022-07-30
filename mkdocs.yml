@@ -27,7 +27,7 @@ site_description: >-
 
 # Repository
 repo_name: hieuhdh/hieuhdh.github.io
-repo_url: https://github.com/hieuhdh/hieuhdh.github.io.git
+repo_url: https://github.com/hieuhdh/hieuhdh.github.io
 
 # Copyright
 copyright: Copyright &copy; 2022 Deuteri
@@ -251,21 +251,21 @@ nav:
 
   - Projects:
     - project/index.md
-    - Năm 2021:
-      - Tháng 6:
+    - 2021:
+      - Month 06:
         - project/2021/06/food-inspection-program.md
         - project/2021/06/robotic-vacuum-cleaner.md
-      - Tháng 7:
+      - Month 07:
         - project/2021/07/attendance-management-system.md
-      - Tháng 8:
+      - Month 08:
         - project/2021/08/brute-force-insider-attack.md
-      - Tháng 9:
+      - Month 09:
           - project/2021/09/quadratic-equations.md
           - project/2021/09/multi-tasking-program.md
-      - Tháng 12:
+      - Month 12:
           - project/2021/12/go-chess.md
-    - Năm 2022:
-      - Tháng 6:
+    - 2022:
+      - Month 06:
         - project/2022/chinese-search-support.md
   - Categories: tags/tags.md
 extra_css:
