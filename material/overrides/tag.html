@@ -1,0 +1,50 @@
+{#-
+    This file was automatically generated - do not edit
+  -#}
+  {% extends "overrides/main.html" %}
+  {% block content %}
+  <aside class="mdx-author">
+    <p><img alt="@hieuhdh"
+        src="https://user-images.githubusercontent.com/86739367/178121501-82770982-19ab-43e7-86a4-3f31989401df.png">
+    </p>
+    <p>
+      <span><strong>Deuteri</strong> · 
+          <a class="magiclink magiclink-github magiclink-mention"
+          href="https://github.com/hieuhdh" title="GitHub User: hieuhdh">@hieuhdh
+          </a>
+      </span> 
+      <span> <a><span class="twemoji mdx-heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"></path></svg></span></a> Your readings:
+          <span id="view-post-user" style="color: #bb86fc"> updating </span> ·
+      <span > Total readings:
+          <span id="view-post-all" style="color: #bb86fc"> updating </span> 
+      </span> 
+      
+    </p>
+  </aside>
+  <!-- <div class="tags-items" style="color: var(--md-default-fg-color--light); padding-bottom: 10px; opacity: 0.9">Tags</div> -->
+  {{ super() }}
+  <h2 id="__comments"><strong>{{ lang.t("meta.comments") }}</strong></h2>
+  <script src="https://giscus.app/client.js" data-repo="hieuhdh/hieuhdh.github.io" data-repo-id="R_kgDOHowGCg"
+    data-category="General" data-category-id="DIC_kwDOHowGCs4CQLlU" data-mapping="pathname" data-reactions-enabled="1"
+    data-emit-metadata="1" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async></script>
+  <script>
+    var theme, giscus = document.querySelector("script[src*=giscus]"),
+      palette = __md_get("__palette");
+    palette && "object" == typeof palette.color && (theme = "slate" === palette.color.scheme ? "dark" : "light", giscus
+      .setAttribute("data-theme", theme)), document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector("[data-md-component=palette]").addEventListener("change", function () {
+        var e = __md_get("__palette");
+        e && "object" == typeof e.color && (e = "slate" === e.color.scheme ? "dark" : "light", document
+          .querySelector(".giscus-frame").contentWindow.postMessage({
+            giscus: {
+              setConfig: {
+                theme: e
+              }
+            }
+          }, "https://giscus.app"))
+      })
+    })
+  
+  </script>
+  {% endblock %}
+  
