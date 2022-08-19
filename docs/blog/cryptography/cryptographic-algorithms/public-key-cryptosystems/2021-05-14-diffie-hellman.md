@@ -20,7 +20,15 @@ tags:
 <span>
 :octicons-calendar-24: May 14, 2021 ·
 :octicons-clock-24: ~5 minutes
+<br>
 
+??? info "Updates"
+    === ":octicons-calendar-24: Timelines"
+        :octicons-arrow-right-24: August 19, 2022:
+
+        - Sửa lỗi hiển thị ở phần [__Man in the middle attack__](#man-in-the-middle-attack)
+    === ":material-countertop: Updated statistics"
+        - Sửa lỗi hiển thị ở phần [__Man in the middle attack__](#man-in-the-middle-attack)
 </span>
 
 ---
@@ -59,6 +67,7 @@ __Man in the middle attack[^1]__ được hiểu nôm na là có một người 
  [^1]: Xem thêm tại https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 
 Lúc này:
+
 - Ở bước 4: Alice nhận được $g^m \ mod \ p$
 - Ở bước 5: Bob nhận được $g^m \ mod \ p$
 - Lúc này, Alice sẽ có shared key `chung` là $g^{am} \ mod \ p$ và Bob sẽ có shared key `chung` là $g^{bm} \ mod \ p$ và hai người đã khác `shared key` hay nói cách khác thì họ đã bị sai khóa bí mật chung và thông tin họ trao đổi không còn toàn vẹn nữa.

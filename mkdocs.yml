@@ -241,7 +241,7 @@ nav:
         - blog/cryptography/problems/2021-06-01-yao's-millionaire-problem.md
     - Computer Programming:
       - Object-oriented programming:
-        - blog/cumputer-programming/oop/2021-03-01-01-oop-class.md
+        - blog/cumputer-programming/oop/index.md
         - blog/cumputer-programming/oop/2021-03-01-02-oop-encapsulation.md
         - blog/cumputer-programming/oop/2021-03-01-03-oop-abstraction.md
         - blog/cumputer-programming/oop/2021-03-01-04-oop-inheritance.md
