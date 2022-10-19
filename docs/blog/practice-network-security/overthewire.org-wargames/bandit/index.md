@@ -11,6 +11,7 @@ hide:
 
 tags:
   - Network security 
+  - Linux syntax
 ---
 
 # __BANDIT__
@@ -23,14 +24,6 @@ tags:
 
 ---
 
-## __LEVEL 20-21__
+## __Lời mở đầu__
 
-
-## __Tham khảo thêm__
-
-[:octicons-arrow-right-24: Xem challenge trên website bandit][website bandit]
-
-  [website bandit]: https://overthewire.org/wargames/bandit/
-
-[^1]: Xem thêm tại [https://en.wikipedia.org/wiki/RSA_(cryptosystem)](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
-[^2]: Xem tiêu chuẩn tại [PKCS#1 v2.1](https://aita.gov.vn/tieu-chuan-rsa-crytography-standard-version-2.2-pkcs-1-v2.2)
+Ở website này, có tổng cộng 33 level tương ứng với 33 username (bandit-X) trong cùng 1 host ==bandit.labs.overthewire.org== và cùng ở port 2220. Vấn đề đặt ra là chúng ta đang thiếu ==password== để có thể connect đến 33 username, và trò chơi này mục đích chính là tìm ra password để connect đến user kế tiếp khi đang ở user hiện tại.

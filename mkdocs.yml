@@ -251,6 +251,9 @@ nav:
     - Practice Network security:
       - Bandit in website Overthewire:
         - blog/practice-network-security/overthewire.org-wargames/bandit/index.md
+        - blog/practice-network-security/overthewire.org-wargames/bandit/0-10.md
+        - blog/practice-network-security/overthewire.org-wargames/bandit/11-20.md
+        - blog/practice-network-security/overthewire.org-wargames/bandit/21-30.md
 
   - Projects:
     - project/index.md
