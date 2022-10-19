@@ -248,6 +248,9 @@ nav:
         - blog/cumputer-programming/oop/2021-03-01-05-oop-polymorphism.md
     - Malware:
       - None
+    - Practice Network security:
+      - Bandit in website Overthewire:
+        - blog/practice-network-security/overthewire.org-wargames/bandit/index.md
 
   - Projects:
     - project/index.md
