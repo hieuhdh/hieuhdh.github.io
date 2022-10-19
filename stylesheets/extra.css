@@ -30,3 +30,11 @@
     animation: heart 1000ms infinite;
     color: red;
   }
+
+  mark {
+    background: #bb86fc !important;
+    color: #000 !important;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-bottom: 0.05rem;
+}
