@@ -23,7 +23,7 @@ site_name: Deuteri's Blog
 site_url: https://hieuhdh.github.io/
 site_author: Deuteri
 site_description: >-
-  Hello everyone, I’m Deuteri and all you guy can call me “Deu”. I’m a student
+  Hello everyone, I’m Deuteri and all you guys can call me “Deu”. I’m a student
 
 # Repository
 repo_name: hieuhdh/hieuhdh.github.io
@@ -248,6 +248,9 @@ nav:
         - blog/cumputer-programming/oop/2021-03-01-05-oop-polymorphism.md
     - Malware:
       - None
+    - Vulnerability:
+      - Buffer Overflow:
+        - blog/vulnerability/buffer-overflow/2022-11-03-arc-injection.md
     - Practice Network security:
       - Bandit in website Overthewire:
         - blog/practice-network-security/overthewire.org-wargames/bandit/index.md
@@ -274,5 +277,6 @@ nav:
       - Month 06:
         - project/2022/chinese-search-support.md
   - Categories: tags/tags.md
+  - About me: aboutme/index.md
 extra_css:
   - stylesheets/extra.css
