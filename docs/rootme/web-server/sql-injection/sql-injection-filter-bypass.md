@@ -88,4 +88,4 @@ Roài, ta submit flag thôi nào
 !!! success "__Flag__"
     KLfgyTIJbdhursqli
 
- [^1] Xem document tại https://www.eso.org/~ndelmott/url_encode.html
+ [^1]: Xem document tại https://www.eso.org/~ndelmott/url_encode.html
