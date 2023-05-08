@@ -11,7 +11,7 @@ search:
   }
 </style>
 
-# DEUTERI'S PROJECTS
+# __DEUTERI'S PROJECTS__
 
 <aside class="mdx-author" markdown>
 ![@hieuhdh][@hieuhdh avatar]

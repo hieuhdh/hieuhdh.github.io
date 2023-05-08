@@ -11,7 +11,7 @@ search:
   }
 </style>
 
-# DEUTERI'S BLOG
+# __DEUTERI'S BLOG__
 
 <aside class="mdx-author" markdown>
 ![@hieuhdh][@hieuhdh avatar]
