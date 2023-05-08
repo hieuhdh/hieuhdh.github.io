@@ -30,7 +30,7 @@ repo_name: hieuhdh/hieuhdh.github.io
 repo_url: https://github.com/hieuhdh/hieuhdh.github.io
 
 # Copyright
-copyright: Copyright &copy; 2022 Deuteri
+copyright: Copyright &copy; 2023 Deuteri
 
 # Configuration
 theme:
@@ -112,6 +112,11 @@ plugins:
   - tags:
       tags_file: tags/tags.md
   - mkdocs-video
+  - table-reader
+  - timetoread:
+      wpm: 190
+      allPages: True
+      textColour: 000000
   # - git-revision-date-localized:
   #     enabled: !ENV [ENABLED_GIT_REVISION_DATE, True]
 
@@ -160,6 +165,8 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
 # Extensions
 markdown_extensions:
   - abbr
@@ -276,6 +283,92 @@ nav:
     - 2022:
       - Month 06:
         - project/2022/chinese-search-support.md
+  - Courses:  
+    - Information Security Course Structure:
+        - courses/information_security_course_structure/index.md
+        - Semester 01:
+          - Introduction to programming: 
+            - courses/information_security_course_structure/semester01/introduction_to_programming/index.md
+            - Theory part: courses/information_security_course_structure/semester01/introduction_to_programming/theory_part/index.md
+            - Practice part: courses/information_security_course_structure/semester01/introduction_to_programming/practice_part/index.md
+            - Books reference: courses/information_security_course_structure/semester01/introduction_to_programming/books_reference/index.md
+          - Linear Algebra:
+            - courses/information_security_course_structure/semester01/linear_algebra/index.md
+            - Books reference: Books reference
+          - Calculus:
+            - courses/information_security_course_structure/semester01/calculus/index.md
+            - Books reference: courses/information_security_course_structure/semester01/calculus/books_reference/index.md
+          - Introduction to Information Security programs:
+            - courses/information_security_course_structure/semester01/introduction_to_information_security_programs/index.md
+          - Introduction to electrical engineering:
+            - courses/information_security_course_structure/semester01/introduction_to_electrical_engineering/index.md
+          - Basic of Quantum Computer:
+            - Books reference: Books reference
+        - Semester 02:
+          - Object-oriented programming:
+            - courses/information_security_course_structure/semester02/object_oriented_programming/index.md
+            - Theory part:
+              - Slides
+              - Project: courses/information_security_course_structure/semester02/object_oriented_programming/theory_part/project.md
+            - Practice part
+          - Data structures and algorithms: 
+            - courses/information_security_course_structure/semester02/data_structures_and_algorithms/index.md
+          - Database: 
+            - courses/information_security_course_structure/semester02/database/index.md
+          - Discrete structures: 
+            - courses/information_security_course_structure/semester02/discrete_structures/index.md
+          - Probability and statistics: 
+            - courses/information_security_course_structure/semester02/probability_and_statistics/index.md
+          - Introduction to digital circuit: 
+            - courses/information_security_course_structure/semester02/introduction_to_digital_circuit/index.md
+        - Semester 03:
+          - Introduction to computer networks: 
+            - courses/information_security_course_structure/semester03/introduction_to_computer_networks/index.md
+          - Computer architecture: 
+            - courses/information_security_course_structure/semester03/computer_architecture/index.md
+        - Semester 04:
+          - Operating systems: 
+            - courses/information_security_course_structure/semester04/operating_systems/index.md
+          - Basic network programming: 
+            - courses/information_security_course_structure/semester04/basic_network_programming/index.md
+          - Computer System programming: 
+            - courses/information_security_course_structure/semester04/computer_system_programming/index.md
+          - Cryptography: 
+            - courses/information_security_course_structure/semester04/cryptography/index.md
+        - Semester 05:
+          - Network security: 
+            - courses/information_security_course_structure/semester05/network_security/index.md
+          - Networks and Systems Administration: 
+            - courses/information_security_course_structure/semester05/networks_and_systems_administration/index.md
+          - Web-Based Application Development: 
+            - courses/information_security_course_structure/semester05/web_based_application_development/index.md
+          - Secure Programming and Exploiting Vulnerabilities: 
+            - courses/information_security_course_structure/semester05/secure_programming_and_exploiting_vulnerabilities/index.md
+
+  - Root me:
+    - rootme/index.md
+    - Forensics:
+      - Command and control:
+        - rootme/forensics/command-control/index.md
+    - Web Client:
+      - rootme/web-client/xss-attack/xss-dom/xss-dom-base-angularjs.md
+    - Web Server:
+      - SQL injection:
+        - rootme/web-server/sql-injection/index.md
+        - rootme/web-server/sql-injection/sql-injection-authentication.md
+        - rootme/web-server/sql-injection/sql-injection-authentication-gbk.md
+        - rootme/web-server/sql-injection/sql-injection-string.md
+        - rootme/web-server/sql-injection/sql-injection-numeric.md
+        - rootme/web-server/sql-injection/sql-injection-routed.md
+        - rootme/web-server/sql-injection/sql-truncation.md
+        - rootme/web-server/sql-injection/sql-injection-error.md
+        - rootme/web-server/sql-injection/sql-injection-insert.md
+        - rootme/web-server/sql-injection/sql-injection-file-reading.md
+        - rootme/web-server/sql-injection/sql-injection-time-based.md
+        - rootme/web-server/sql-injection/sql-injection-blind.md
+        - rootme/web-server/sql-injection/sql-injection-filter-bypass.md
+  - Pygoat:
+    - pygoat/index.md
   - Categories: tags/tags.md
   - About me: aboutme/index.md
 extra_css:
