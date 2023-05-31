@@ -10,8 +10,7 @@ hide:
   - feedback
 
 tags:
-  - Forensics 
-  - C&C
+  - SQL injection
 ---
 
 # __Overview__

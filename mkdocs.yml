@@ -93,7 +93,7 @@ theme:
       js: fontawesome/brands/js
       css:  fontawesome/brands/css3
       c++: fontawesome/brands/c++
-
+   
 # Plugins
 plugins:
   - search
@@ -212,6 +212,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       clickable_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets
 
 # Page tree
 nav:
@@ -350,8 +351,11 @@ nav:
     - Forensics:
       - Command and control:
         - rootme/forensics/command-control/index.md
+    - Steganography
     - Web Client:
-      - rootme/web-client/xss-attack/xss-dom/xss-dom-base-angularjs.md
+      - XSS Attack:
+        - rootme/web-client/xss-attack/xss-dom/xss-dom-base-angularjs.md
+        - rootme/web-client/xss-attack/xss-dom/xss-dom-base-angularjs.md
     - Web Server:
       - SQL injection:
         - rootme/web-server/sql-injection/index.md
@@ -367,8 +371,23 @@ nav:
         - rootme/web-server/sql-injection/sql-injection-time-based.md
         - rootme/web-server/sql-injection/sql-injection-blind.md
         - rootme/web-server/sql-injection/sql-injection-filter-bypass.md
+      - PHP:
+        - rootme/web-server/php/index.md
+        - rootme/web-server/php/local_file_inclusion.md  
+        - rootme/web-server/php/local_file_inclusion_double_encoding.md
+        - rootme/web-server/php/local_file_inclusion_wrappers.md
+        - rootme/web-server/php/remote_file_inclusion.md 
+        - rootme/web-server/php/http_directory_indexing.md
+        - rootme/web-server/php/file-upload_double_extensions.md
+        - rootme/web-server/php/file-upload_mine_type.md
+        - rootme/web-server/php/directory_traversal.md
+        - rootme/web-server/php/php_assert().md
+        - rootme/web-server/php/php_filters.md
+        - rootme/web-server/php/php-register_globals.md
   - Pygoat:
     - pygoat/index.md
+  - EVABS:
+    - evabs/index.md
   - Categories: tags/tags.md
   - About me: aboutme/index.md
 extra_css:

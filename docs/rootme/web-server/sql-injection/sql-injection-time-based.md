@@ -35,7 +35,13 @@ Link challenge này tại [:octicons-arrow-right-24: http://challenge01.root-me.
 
 Trong challenge này, mục tiêu của ta là lấy được password admin.
 
-> __Time-based SQL Injection__ là một kỹ thuật SQL Injection suy luận dựa trên việc gửi một truy vấn SQL đến cơ sở dữ liệu, buộc cơ sở dữ liệu phải đợi một khoảng thời gian xác định (tính bằng giây) trước khi phản hồi
+> __Time-based SQL Injection__ là một kỹ thuật SQL Injection suy luận dựa trên việc gửi một truy vấn SQL đến cơ sở dữ liệu, buộc cơ sở dữ liệu phải đợi một khoảng thời gian xác định (tính bằng giây) trước khi phản hồi. Về định nghĩa thì hơi khó hiểu, tôi sẽ ví dụ như sau:
+
+> Ví dụ: Ta cần check password một tài khoản có username là admin bằng cách brute force
+
+> - Ta biết password có n kí tự và đặt là S[n]
+
+> - Ta sẽ gửi request lần lượt từ S[0] -> S[n-1], nếu so khớp S[0] trùng với S[0] trong password thì cho nó ngủ 5s :octicons-arrow-right-24: với thời gian phản hồi như thế, ta có thể biết được kí tự S[0] là kí tự gì. Tương tự đến S[n-1].
 
 ## __Kịch bản tấn công__
 ### Bước 1: Kiểm tra website
